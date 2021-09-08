@@ -24,6 +24,7 @@ app.use("/personagens/create", create);
 app.use("/personagens/update", update);
 app.use("/personagens/delete", del);
 
+
 app.all("*", function (req, res) {
   res.status(404).send({ message: "Endpoint was not found" });
 });
